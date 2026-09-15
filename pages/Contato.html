@@ -18,16 +18,53 @@
                 <a href="../pages/Contato.html">Contato</a>  
             </p>
         </nav>
-        <br/>
+        
     </header>
     
-    <h3>Fale Conosco</h3>
-         <p> Whatsapp - (xx) xxxxxxxx</p>
-         <p> Email - xxxxxxx@gmail.com</p>
-         <picture>
-            <img src="../img/suporte.webp" >
-         </picture>
+    <main>
+            <section id="contato">
+                <h2>Fale Conosco</h2>
+                
+                <form action="mailto:seuemail@exemplo.com?subject=Comentário%20sobre%20o%20site%20ItaPets" method="post" enctype="text/plain">
 
+                    <fieldset>
+                        <h3>Dados</h3>
+                        
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="Nome" required placeholder="Digite seu nome">
 
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="E-mail" required placeholder="seuemail@exemplo.com">
+
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="Telefone" required placeholder="(79) 99999-9999">
+                    </fieldset>
+
+                    <fieldset>
+                        <h3>Você comprou algum produto?</h3>
+                        
+                        <input type="radio" id="Sim" name="ComprouProduto" value="Sim">
+                        <label for="pet-cao">Sim</label>
+
+                        <input type="radio" id="Não" name="ComprouProduto" value="Não">
+                        <label for="pet-gato">Não</label>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <h3>Descreva o motivo de contato</h3>
+                        <textarea id="comentario" name="Comentario" rows="5" cols="40" required placeholder="Escreva aqui..."></textarea>
+                    </fieldset>
+
+                    <button type="submit">Enviar Comentário</button>
+                    <button type="reset">Limpar Campos</button>
+
+                </form>
+            </section>
+        </main>
+
+<footer>
+        <p>&copy; 2026 ItaPets - Todos os Direitos Reservados.</p>
+    </footer>
 </body>
 </html>
