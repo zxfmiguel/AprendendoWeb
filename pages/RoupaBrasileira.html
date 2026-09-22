@@ -4,14 +4,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8"/>
     <title>Roupa Brasileira - ItaPets</title>
-    <link rel="stylesheet" href="../style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <div class="corpo">
     <header id="Header">
         <div><h1>ItaPets </h1>
-        <div>O melhor para seu animal de estimação!</div>
+        <div id="descricao">O melhor para seu animal de estimação!</div>
         </div>
         <nav>
             <p><a href="../index.html">Home</a> | 
@@ -26,10 +26,11 @@
     </header>
 
     <main>
+        
         <h2>Roupa Brasileira</h2>
-
-        <img src="../img/roupa-brasileira2.webp" height="400">
-
+        
+        <img src="../img/roupa-brasileira2.webp" width="400" height="400" >
+        
         
         <dl>
                     <dt><strong>Descrição</strong></dt>
@@ -53,9 +54,10 @@
                 <input type="hidden" name="preco" value="0,001">
                 <button type="submit">Comprar</button>
             </form>
-        <p>
-            <a href="../index.html">Voltar para o catálogo</a>
-        </p>
+        <form action="../index.html">
+            <button type="submit">Voltar para o catalogo</button>
+        </form>
+
     </main>
     </div>
     <footer>
