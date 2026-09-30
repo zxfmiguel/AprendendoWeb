@@ -68,8 +68,8 @@ button{
         --q3: 1.25vh;
         --q4: 6vh;
 
-        --transition: 0.15s ease-in-out;
-        --scale: 1.05;
+        /* --transition: 0.15s ease-in-out; */
+        /*--scale: 1.05;*/
 
         --br: 3em;
         --br2: 0.5em;
@@ -112,7 +112,7 @@ button{
     border: 0;
     text-decoration: none;
     font-family: Poppins;
-    transition: var(--transition);
+    /* transition: var(--transition); */
 }
 body{
     
@@ -187,9 +187,10 @@ article{
     padding: 1em;
     border-radius: 1em;
     box-shadow: none;
-    
+    align-items: center;
     
 }
+
 
 article p:first-child{
     margin-bottom: 1em;
@@ -198,7 +199,10 @@ article p:first-child{
 
 img{
     aspect-ratio: 1/1;
+    width: 100%;
+    height: 80%;
 }
+
 .ConfigNav{
     padding: 0 5vw 0 5vw;
 }
@@ -215,7 +219,47 @@ footer{
     padding: 4e;
     display: flex;
     justify-content: center;
+    margin-top: 2vh;
+    background: linear-gradient(90deg, rgba(2, 18, 43, 1) 0%, rgba(7, 78, 99, 1) 15%, rgba(2, 122, 118, 1) 50%, rgba(19, 67, 89, 1) 80%, rgba(3, 0, 0, 1) 100%);
+    
 }
+footer p{
+    color: #F9F9F9;
+}
+
+
+
+#detalhes-produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza a imagem, tabela e o botão */
+    /* gap: 1.5em; */
+    /* padding: 2em 1em; */
+    margin-left: 20vw;
+    
+    
+}
+#detalhes-produto dl {
+    width: 100%;
+}
+
+#detalhes-produto:hover{
+    transition: none;
+    transform: scale(1);
+}
+#contato{
+    display: flex;
+
+}
+fieldset{
+    background-color: rgba(228, 220, 220, 0.836);
+    box-shadow: 2px 2px 2px 2px grey;
+    margin: 2vh 2vw 2vh 2vw;
+    padding: 0 0 2vh 2vh;
+    border-radius: 2em;
+}
+
+
 
 nav a, nav{
     color: #ffffff;
@@ -223,23 +267,38 @@ nav a, nav{
 
 @media (max-width: 768px){
     section{
-        grid-template-columns: repeat( 2 , auto) !important;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
     }
+
+    footer{
+        margin-top: 5vh;
+    }
+
     img{
-        height: 75%; 
-        width: 75%;
+         
         aspect-ratio: 1/1;
     }
     nav{
         font-size: 0.8em;
         width: 60%;
     }
+    
     article p:last-child{
         margin-top: 2em;
     }
     
     header h1{
         font-size: 1em;
+    }
+    #detalhes-produto{
+        width: 75%;
+        height: 100%;
+        margin-left: 8vw;
+    }
+    dl{
+        margin-top: 2vh;
     }
     #descricao{
         display: none;
