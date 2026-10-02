@@ -37,9 +37,19 @@
     </header>
 
     <main>
-
+        <button id="dark-mode">Modo Escuro/Claro</button>
         <h2>Catálogo da loja</h2>
+        <section id="carrossel">
 
+            <button id="anterior">❮</button>
+
+            <img id="imagemCarrossel"
+                src="img/fantasia-bleach.webp"
+                alt="Produto em destaque" >
+
+            <button id="proximo">❯</button>
+
+        </section>
         <!-- Produtos da loja -->
 
         <h3>Vestimentas</h3>
@@ -119,7 +129,7 @@
             </article>
 
             <article>
-                <a href="pages/Fone.html">
+                <a href="pages/fone-para-cachorro.html">
                     <p>Fone</p>
                     <img src="img/fone.webp" alt="fone adaptados para pets" height="300">
                 </a>
@@ -130,7 +140,7 @@
             </article>
 
             <article>
-                <a href="pages/ColarDePerolas.html">
+                <a href="pages/Colar-de-Perolas-de-luxo-para-pet.html">
                     <p>Colar</p>
                     <img src="img/colar-de-perolas.webp" alt="Colar de pérolas para pet" height="300">
                 </a>
@@ -141,7 +151,7 @@
             </article>
 
             <article>
-                <a href="pages/BandanaVermelha.html">
+                <a href="pages/Bandana-Vermelha-para-cachorro.html">
                     <p>Bandana Vermelha</p>
                     <img src="img/bandana-vermelha.webp" alt="Bandana vermelha para pet" height="300">
                 </a>
@@ -158,7 +168,7 @@
         <section id="Objetos_Variados">
 
             <article>
-                <a href="pages/Cama.html">
+                <a href="pages/Cama-de-dormir-para-o-pet.html">
                     <p>Cama</p>
                     <img src="img/cama.webp" alt="Cama para pet" height="300">
                 </a>
@@ -169,7 +179,7 @@
             </article>
 
             <article>
-                <a href="pages/Andador.html">
+                <a href="pages/Andador-para-cachorro.html">
                     <p>Andador</p>
                     <img src="img/andador.webp" alt="Andador para pet" height="300">
                 </a>
@@ -180,7 +190,7 @@
             </article>
 
             <article>
-                <a href="pages/KitMordedores.html">
+                <a href="pages/Kit-de-mordedores-para-o-pet.html">
                     <p>Kit Mordedores</p>
                     <img src="img/kit-mordedores.webp" alt="Kit de mordedores para pet" height="300">
                 </a>
@@ -197,7 +207,24 @@
     <footer>
         <p>&copy; 2026 ItaPets - Todos os Direitos Reservados.</p>
     </footer>
-
+    <script src="./js/script.js"></script>
 </body>
+
+<style>
+    body.dark {
+    background-color: #1e1e1e !important; 
+    color: white !important;
+
+}
+body.dark article{
+    background-color: #333;
+}
+body.dark a{
+    color: azure;
+}
+
+</style>
+
+<script src="../js/script.js"></script>
 
 </html>

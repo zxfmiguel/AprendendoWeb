@@ -145,10 +145,11 @@ button{
     margin-top: 1em;
 }
 
-section{    
+section{
     padding: 0 2.5vw 0 2.5vw;
     display: grid;
     grid-template-columns: repeat( 3 , auto);
+    justify-content: space-between;
     row-gap: 3em;
 }
 article a{
@@ -183,7 +184,7 @@ article{
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
-    width: 50%;
+    width: 100%;
     padding: 1em;
     border-radius: 1em;
     box-shadow: none;
@@ -216,7 +217,6 @@ main{
     padding: 0 5vw 0 5vw;
 }
 footer{
-    padding: 4e;
     display: flex;
     justify-content: center;
     margin-top: 2vh;
@@ -236,6 +236,7 @@ footer p{
     /* gap: 1.5em; */
     /* padding: 2em 1em; */
     margin-left: 20vw;
+    width: 50%;
     
     
 }
@@ -259,6 +260,31 @@ fieldset{
     border-radius: 2em;
 }
 
+#carrossel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+
+    
+}
+
+#carrossel img {
+    width: 300px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+#carrossel button {
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+body.dark {
+    background-color: #1e1e1e;
+    color: white;
+}
 
 
 nav a, nav{
